@@ -1,0 +1,334 @@
+/*for all*/
+
+body {
+	color: #2e2e2e;
+	font: 16px/24px "Georgia",Arial,sans-serif;
+}
+
+h1 {
+	font-family: "Georgia",sans-serif;
+	font-weight: 400;
+	font-size: 55px;	
+}
+
+p {
+	font-family: "宋体";
+}
+
+/*for nav*/
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav ul li{
+	display: inline;
+	margin-right: 24px;
+}
+
+nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+nav ul li a:hover {
+	color: #330033;
+}
+/*for nav*/
+
+/*for header*/
+.top-container {
+	overflow: hidden;
+	padding: 48px 0;
+}
+
+.header-hr {
+	background-color: rgba(255,255,255, .1);
+	border: 0;
+	height: 1px;
+	margin-top: 0;
+	margin-bottom: 96px;
+}
+
+.header-home {
+	background: url(../img/homepage.jpg) 0 0 no-repeat;
+	height: 600px;
+	background-size: 100%;
+}
+.header-photos {
+	background: url(../img/photos.jpg) 0 0 no-repeat;
+	height: 330px;
+	background-size: 100%;
+	margin-bottom: 96px;
+}
+
+.header-art {
+	background: url(../img/art.jpg) 0 0 no-repeat;
+	height: 330px;
+	background-size: 100%;
+	margin-bottom: 96px;
+}
+
+.header-contents {
+	text-align: center;
+	color: white;
+	padding: 0 200px;
+}
+/*for header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for blog*/
+
+h4 {
+	font-family: "黑体";
+	font-weight: 400;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	margin-top: 180px;
+}
+
+.blog {	
+	width: 700px;
+	margin: auto;
+	margin-top: 90px;
+	background-color: #e3e3e3;
+}
+
+.blog p {
+	color: green;
+	margin: 0px 50px 50px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for photos*/
+
+
+
+h3 {
+	font-family: "Georgia", Arial, sans-serif;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+.container-ph {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.column-half {
+	margin: 0 12px 24px 12px;
+	width: 274px;
+	float: left;
+}
+
+.column-half p {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.row {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	border: 5px solid white;
+	box-shadow: 0 0 4px rgba(0,0,0,.3);
+	display: block;
+	overflow: hidden;
+
+}
+
+figure:hover figcaption {
+	opacity: 1;
+	transform: rotate(0);
+}
+
+figcaption {
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	color: white;
+
+	transition: all 0.4s ease-in;
+	transition-delay: 0.5s;
+	transform: rotate(360deg);
+}
+
+figcaption h3,
+figcaption p {
+	padding: 10px 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	position: relative;
+	left: 100%;
+	transition: all 0.4s;
+}
+
+figcaption:hover h3,
+figcaption:hover p {
+	left: 0;
+}
+
+figcaption h3 {
+	background: black;
+	margin: 20px;
+	transition-delay: 1s;
+}
+
+figcaption p {
+	transition-delay: 1.2s;
+}
+
+figcaption a {
+	text-decoration: none;
+}
+
+figcaption a h3:hover {
+	color: #330033;
+}
+
+figure img {
+	transition: all 1.5s;
+}
+
+figure:hover img {
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for art*/
+
+.container-art {
+	width: 1200px;
+	margin: auto;
+	margin-top: 180px;
+	margin-left: 160px;
+}
+
+.container-art a {
+	text-decoration: none;
+}
+
+.container-art a p:hover {
+	color: #330033;
+}
+
+.container-art a p {
+	text-align: center;
+	color: white;
+	line-height: 50px;
+	font-size: 30px;
+	background: #2e2e2e;
+}
+
+.container-art ul {
+	perspective: 600;
+}
+
+.container-art li {
+	width: 200px;
+	height: 200px;	
+	float: left;
+	list-style:none;
+	margin: 0px 20px 40px 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.container-art li div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 0.5s;
+	backface-visibility: hidden;
+}
+
+.container-art li:hover .front {
+	z-index: 0;
+	transform: rotateY(180deg);
+}
+
+.container-art li:hover .back {
+	z-index: 0;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.front {
+	z-index: 3;
+}
+
