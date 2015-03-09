@@ -22,16 +22,6 @@ body {
 	background: url(/img/ice-cover50.jpg) 0 0 no-repeat;
 }
 
-.articles ul li a {
-	color: black;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.618em;
-}
-
-.articles ul li a:hover{
-	color: #330033;
-}
 
 footer {
 	width: 100%;
