@@ -28,31 +28,11 @@ footer {
 	text-align: center;
 }
 
-/*for blog*/
-
-h4 {
-	font-family: "黑体";
-	font-weight: 400;
-	text-align: center;
-	font-size: 40px;
-	color: black;
-	margin-top: 180px;
-}
-
-.blog {	
-	width: 700px;
-	margin: auto;
-	margin-top: 90px;
-	background-color: #e3e3e3;
-}
-
-.blog p {
-	color: green;
-	margin: 0px 50px 50px 40px;
-}
-
 /* Rectangle In */
+
 .hvr-rectangle-in {
+	text-decoration: none;
+	font-size: 2em;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
