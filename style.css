@@ -1,4 +1,5 @@
 /*for all*/
+@media (min-width: @screen-sm-min) {
 
 body {
 	font: 1.618em "Georgia",Arial,sans-serif;
